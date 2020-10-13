@@ -15,5 +15,7 @@ public interface TodoRepository extends JpaRepository<Todo, Long>{
 	List<Todo> findByDeleteDateIsNotNull();
 	
 	List<Todo> findByDeleteDateIsNull();
+
+	List<Todo> findByCreatedByAndDeleteDateIsNull(String createdBy);
 	
 }
