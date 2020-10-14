@@ -23,7 +23,7 @@ public class UserController {
 	}
 
 	@PostMapping("/register")
-	public Long createTodo(@RequestBody RegistrationReq registrationReq) {
+	public Long register(@RequestBody RegistrationReq registrationReq) {
 		return userService.register(registrationReq);
 	}
 	
