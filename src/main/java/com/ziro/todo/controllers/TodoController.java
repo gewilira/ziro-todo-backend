@@ -54,7 +54,7 @@ public class TodoController {
 		return todoService.updateTodo(id, todoReq.getDescription());
 	}
 	
-	@PutMapping("/todo/{id}/switchState")
+	@PutMapping("/todo/switchState/{id}")
 	public Todo switchStateTodo(@PathVariable Long id) {
 		return todoService.switchState(id);
 	}
